@@ -16,7 +16,7 @@ class GenofaxLoginTest(unittest.TestCase):
     def test_userlogin(self):
         self.driver.get('https://testing.genofax.com/')
         popup_alert = self.driver.find_element(By.XPATH, '/html/body/div/div[3]/div/div/div[2]/button[2]').click()
-        time.sleep(5)
+        time.sleep(10)
         myacntbtn = self.driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div[1]/div/div[3]/a[2]').click()
         time.sleep(2)
         self.driver.find_element(By.ID, 'email').send_keys('user@example.com')
